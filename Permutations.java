@@ -54,9 +54,9 @@ public class Permutations {
       char[] temp = new char[lets.length - 1];
       for (int j = 0; j < temp.length; j++) {
         if (j >= i)
-          temp[j] = lets[j+1]; //remove correct one
+          temp[j] = lets[j+1]; //remove correct one and do after
         else
-          temp[j] = lets[j]; //put correct one
+          temp[j] = lets[j]; //put before correct one
       }
       permutate(temp, poss, cur + lets[i]);
     }
